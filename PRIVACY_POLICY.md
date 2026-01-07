@@ -53,6 +53,4 @@ We may update this Privacy Policy from time to time. Any changes will be posted 
 
 ## Contact Us
 
-If you have questions about this Privacy Policy or the app, please open an issue on our GitHub repository:
-
-[https://github.com/vaughanhale/dailyglance-support/issues](https://github.com/vaughanhale/dailyglance-support/issues)
+If you have questions about this Privacy Policy or the app, please use the "Send Feedback" feature within the DailyGlance app. Open the app, scroll to the Support section, and tap "Send Feedback" to reach us.

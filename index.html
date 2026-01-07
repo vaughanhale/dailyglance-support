@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyGlance Support</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --text-color: #1d1d1f;
+            --secondary-text: #6e6e73;
+            --bg-color: #ffffff;
+            --section-bg: #f5f5f7;
+            --border-color: #d2d2d7;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #f5f5f7;
+                --secondary-text: #a1a1a6;
+                --bg-color: #000000;
+                --section-bg: #1c1c1e;
+                --border-color: #38383a;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            color: var(--secondary-text);
+            font-size: 1.1em;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--primary-color);
+        }
+
+        h3 {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 20px 0 8px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: var(--text-color);
+        }
+
+        .help-box {
+            background-color: var(--section-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .help-box h3 {
+            margin-top: 0;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: var(--secondary-text);
+        }
+
+        .steps {
+            margin: 12px 0;
+            padding-left: 20px;
+        }
+
+        .steps li {
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+
+        .privacy-section {
+            background-color: var(--section-bg);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .privacy-section h3 {
+            margin-top: 16px;
+        }
+
+        .privacy-section h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .highlight {
+            background-color: var(--section-bg);
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: var(--secondary-text);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="app-icon">📖</div>
+        <h1>DailyGlance Support</h1>
+        <p class="tagline">Daily scripture on your Home Screen</p>
+    </header>
+
+    <section id="about">
+        <h2>About DailyGlance</h2>
+        <p>DailyGlance displays the daily scripture text from "Examining the Scriptures Daily" on your iOS Home Screen widgets. Import your EPUB file, customize the appearance, and enjoy daily spiritual encouragement at a glance.</p>
+    </section>
+
+    <section id="help">
+        <h2>How to Get Help</h2>
+        <div class="help-box">
+            <h3>In-App Feedback</h3>
+            <p>The best way to get support is through the app:</p>
+            <ol class="steps">
+                <li>Open DailyGlance</li>
+                <li>Scroll down to the "Support" section</li>
+                <li>Tap "Send Feedback"</li>
+                <li>Describe your question or issue</li>
+                <li>Tap "Send"</li>
+            </ol>
+            <p>Your message includes helpful device information that helps us assist you faster.</p>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <p class="faq-question">How do I get the Daily Text content?</p>
+            <p class="faq-answer">Download the "Examining the Scriptures Daily" EPUB from jw.org. Search for the publication, select the current year, choose "Text" under Download Options, then select "EPUB" format. Once downloaded, open DailyGlance and tap "Select EPUB File" to import it.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">How do I add a widget to my Home Screen?</p>
+            <p class="faq-answer">Touch and hold an empty area on your Home Screen until the apps jiggle. Tap the + button in the top corner, search for "DailyGlance", choose your preferred size (Small, Medium, or Large), and tap "Add Widget".</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Why isn't my widget showing content?</p>
+            <p class="faq-answer">Make sure you've imported an EPUB file for the current year. Open the DailyGlance app and check that the daily text is displaying correctly. If the EPUB is from a different year, download the current year's publication from jw.org.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">How do I customize the widget appearance?</p>
+            <p class="faq-answer">Open the app and use the customization options: choose a Style (Classic or Date Focused), select Colors (System or Custom), pick a Font (Default, Serif, or Rounded), and adjust the Text Size slider.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Do I need to download a new EPUB each year?</p>
+            <p class="faq-answer">Yes. The "Examining the Scriptures Daily" publication is released annually with new content for each year. When the new year begins, download the new EPUB from jw.org and import it into DailyGlance.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">What widget sizes are available?</p>
+            <p class="faq-answer">DailyGlance offers Small (scripture reference), Medium (reference and text), and Large (full daily text with commentary) widgets. Choose the size that best fits your Home Screen.</p>
+        </div>
+    </section>
+
+    <section id="privacy">
+        <h2>Privacy Policy</h2>
+        <p><em>Last updated: December 29, 2025</em></p>
+
+        <div class="privacy-section">
+            <h3>Our Commitment</h3>
+            <p><strong>DailyGlance does not collect, store, or transmit any personal information.</strong> The app is designed with privacy as a core principle.</p>
+
+            <h3>What We Don't Collect</h3>
+            <ul class="steps">
+                <li>No analytics or usage data</li>
+                <li>No location tracking</li>
+                <li>No account or login required</li>
+                <li>No device identifiers</li>
+            </ul>
+
+            <h3>Local Data Storage</h3>
+            <p>All data is stored locally on your device:</p>
+            <ul class="steps">
+                <li><strong>EPUB Content:</strong> Scripture content is processed and stored entirely on your device</li>
+                <li><strong>Widget Settings:</strong> Your customization preferences are stored locally</li>
+                <li><strong>No Cloud Sync:</strong> Your data is never uploaded to external servers</li>
+            </ul>
+
+            <h3>In-App Purchases</h3>
+            <p>Optional tip jar purchases are processed entirely by Apple through the App Store. We do not have access to your payment information.</p>
+
+            <h3>Your Rights</h3>
+            <ul class="steps">
+                <li><strong>Access:</strong> All your data is stored locally on your device</li>
+                <li><strong>Deletion:</strong> Uninstalling the app removes all associated data</li>
+                <li><strong>Portability:</strong> Your EPUB files remain yours and can be used in other applications</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DailyGlance. All rights reserved.</p>
+    </footer>
+</body>
+</html>
